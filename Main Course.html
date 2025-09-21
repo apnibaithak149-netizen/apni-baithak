@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Momos • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header><h1>Veg Main Course</h1></header>
+  <div class="menu-grid">
+
+    <div class="dish">
+      <img src="https://herbivorecucina.com/wp-content/uploads/2023/03/Mixed-Vegetable-Paatra-Sabji-1-scaled.jpg" alt="Mix Veg">
+      <div class="dish-title">Mix Veg</div>
+      <div class="price-row"><span>Half ₹120/- | Full ₹210/-</span></div>
+    </div>
+
+    
+
+
+   
+    <div class="dish">
+      <img src="https://i.pinimg.com/736x/b2/14/28/b214283f4f7d9ef3e5d0de53cc2f2da7.jpg" alt="Dhaba Dal">
+      <div class="dish-title"> Dal Tadka</div>
+      <div class="price-row"><span>Half ₹89/- | Full ₹150/-</span></div>
+    </div>
+
+  
+
+    <div class="dish">
+      <img src="https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg" alt="Dal Makhni">
+      <div class="dish-title">Dal Makhni</div>
+      <div class="price-row"><span>Half ₹120/- | Full ₹200/-</span></div>
+    </div>
+
+    
+
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQohI_LPAnsZ2ZzY-gxqxSvIIInt7tF1vYTw&s" alt="Paneer Bhurji">
+      <div class="dish-title">Paneer Bhurji</div>
+      <div class="price-row"><span> ₹230/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://tiffinandteaofficial.com/wp-content/uploads/2020/07/Untitled-1.jpg" alt="Shahi Paneer">
+      <div class="dish-title">Shahi Paneer</div>
+      <div class="price-row"><span>Half ₹130/- | Full ₹230/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/kadai-paneer-recipe.jpg" alt="Kadai Paneer">
+      <div class="dish-title">Kadai Paneer</div>
+      <div class="price-row"><span>Half ₹140/- | Full ₹250/-</span></div>
+    </div>
+
+   
+    <div class="dish">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiPB110KdX9JjV4QBdJVLvO3Ljfw1BsJfNnA&s" alt="Paneer Lababdar">
+      <div class="dish-title">Paneer Lababdar</div>
+      <div class="price-row"><span> ₹250/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-restaurant-style-paneer-butter-masala-paneer-makhani-video-recipe.jpg" alt="Paneer Butter Masala">
+      <div class="dish-title">Paneer Butter Masala</div>
+      <div class="price-row"><span>Half ₹140/- | Full ₹250/-</span></div>
+    </div>
+
+   
+
+    
+
+    <div class="dish">
+      <img src="https://shwetainthekitchen.com/wp-content/uploads/2023/03/mutter-mushroom.jpg" alt="Matar Mushroom">
+      <div class="dish-title">Matar Mushroom</div>
+      <div class="price-row"><span>Half ₹130/- | Full ₹250/-</span></div>
+    </div>
+
+    <div class="dish">
+      <img src="https://ministryofcurry.com/wp-content/uploads/2020/02/mushroom-masala-1-2.jpg" alt="Mushroom Masala">
+      <div class="dish-title">Kadhai Mushroom </div>
+      <div class="price-row"><span>Half ₹140/- | Full ₹250/-</span></div>
+    </div>
+
+   
+
+    <div class="dish">
+      <img src="https://i.ytimg.com/vi/oI6uWMyVG9E/sddefault.jpg" alt="Kadhai Chaap">
+      <div class="dish-title">Kadhai Chaap</div>
+      <div class="price-row"><span>Half ₹140/- | Full ₹250/-</span></div>
+    </div>
+
+    
+
+    <div class="dish">
+      <img src="https://www.funfoodfrolic.com/wp-content/uploads/2022/09/Soya-Chaap-Tikka-Blog.jpg" alt="Butter Masala Chaap">
+      <div class="dish-title"> Masala Chaap</div>
+      <div class="price-row"><span>Half ₹150/- | Full ₹260/-</span></div>
+    </div>
+
+   
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
